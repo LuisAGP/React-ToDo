@@ -2,7 +2,7 @@ import CrossIcon from "./componets/icons/CrossIcon";
 import MoonIcon from "./componets/icons/MoonIcon";
 
 const App = () => {
-  return <div className="min-h-[100vh] bg-gray-200 bg-[url('./assets/images/bg-mobile-light.jpg')] bg-no-repeat bg-contain">
+  return <div className="min-h-[100vh] bg-gray-200 bg-[url('./assets/images/bg-mobile-light.jpg')] bg-no-repeat bg-contain md:bg-cover">
     <header className="container mx-auto px-4">
       <div className="flex justify-between pt-4">
         <h1 className="text-3xl font-semibold uppercase text-white tracking-[0.4em]">Todo</h1>
