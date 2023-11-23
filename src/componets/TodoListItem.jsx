@@ -1,11 +1,12 @@
+import { forwardRef } from "react";
 import IconCheck from "./icons/IconCheck";
 import IconCross from "./icons/IconCross";
 
-const TodoListItem = ({todo, updateTodo, removeTodo}) => {
+const TodoListItem = forwardRef(({todo, updateTodo, removeTodo, ...props}, ref) => {
 
     const {id,title,completed} = todo;
 
-    return <article className="flex gap-2 border-b-gray-200 border-b">
+    return <article {...props} ref={ref} className="flex gap-2 border-b-gray-200 border-b">
         {
             completed 
                 ? <button 
@@ -25,7 +26,7 @@ const TodoListItem = ({todo, updateTodo, removeTodo}) => {
             <IconCross />
         </button>
     </article>
-}
+});
 
 
 export default TodoListItem;

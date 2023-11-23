@@ -5,8 +5,6 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
     document.documentElement.classList.remove('dark')
 }
 
-console.log("aquí")
-
 // // Whenever the user explicitly chooses light mode
 // localStorage.theme = 'light'
 
